@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="오피박사 - 최고로 신뢰할 수 있는 오피 정보 제공 사이트, 오피 사이트 찾기, 오피업소, 마사지, 스웨디시 정보">
+    <meta name="robots" content="index, follow">
+    <title>오피박사 | 최고의 오피 정보</title>
+    <style>
+        :root {
+            --primary: #ff4d4d;
+            --accent: #ffd54a;
+            --text: #eaeaea;
+            --bg: #000;
+            --card: #0f0f0f;
+            --border: #1f1f1f;
+            --radius: 14px;
+            --imgw: 400px;
+        }
+        * { box-sizing: border-box; }
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', Segoe UI, Roboto, Arial, sans-serif;
+            overflow-x: hidden;
+        }
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .brandbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border);
+            background: #0b0b0b;
+        }
+        .brand-logo {
+            height: 50px;
+            width: auto;
+            display: block;
+        }
+        .topnav {
+            display: flex;
+            gap: 12px;
+            padding: 10px 20px;
+            border-bottom: 1px solid var(--border);
+            background: #0b0b0b;
+            justify-content: center;
+        }
+        .topnav a {
+            padding: 8px 12px;
+            border-radius: 10px;
+            border: 1px solid transparent;
+            color: #e4e4e4;
+        }
+        .topnav a.active, .topnav a:hover {
+            border-color: var(--border);
+            background: #111;
+        }
+        .hero {
+            border-bottom: 1px solid var(--border);
+            padding: 10px 0 12px;
+            text-align: center;
+        }
+        .hero-img {
+            display: block;
+            width: var(--imgw);
+            height: auto;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        h1 {
+            font-size: clamp(30px, 4vw, 50px);
+            margin: 16px 0 6px;
+            letter-spacing: -.02em;
+            text-align: center;
+        }
+        h2 {
+            font-size: clamp(22px, 3.2vw, 32px);
+            margin: 28px 0 12px;
+        }
+        h3 {
+            font-size: clamp(18px, 2.4vw, 22px);
+            margin: 16px 0 8px;
+        }
+        .muted {
+            color: var(--muted);
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary);
+            color: #fff;
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(255, 0, 140, 0.4);
+            margin: 30px 0;
+            font-size: 18px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .cta-button:hover {
+            background-color: var(--accent);
+            transform: scale(1.1);
+        }
+        footer {
+            padding: 20px 0;
+            text-align: center;
+            background: #111;
+            color: var(--text);
+        }
+        .content {
+            padding: 20px;
+        }
+        .content p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="brandbar">
+        <a href="/" aria-label="Home">
+            <img src="https://static.wixstatic.com/media/fefa38_50b01e3e0d4a4365b7efee82dbbdb1ed~mv2.png" alt="오피박사 로고" class="brand-logo">
+        </a>
+    </div>
+
+    <nav class="topnav">
+        <a href="/" class="active">홈</a>
+        <a href="/services">서비스소개</a>
+        <a href="/contact">제휴문의</a>
+    </nav>
+
+    <div class="hero">
+        <a href="https://opbaksa.com">
+            <img class="hero-img" src="https://static.wixstatic.com/media/fefa38_a2178ded005c4f53b0d75336fdad1a68~mv2.jpg" alt="오피박사 메인 이미지">
+        </a>
+        <a href="https://opbaksa.com" class="cta-button">오피박사 바로가기</a>
+    </div>
+
+    <main class="container">
+        <h1>오피박사 - 최고의 오피 정보 사이트</h1>
+        <div class="content">
+            <h2>서비스 소개</h2>
+            <p class="muted">오피박사에서 제공하는 최신 오피 정보와 실시간 추천 서비스를 확인하세요.</p>
+
+            <h3>오피박사란?</h3>
+            <p>오피박사는 전국 최고의 오피 정보를 제공하는 사이트입니다. 서울, 경기, 부산, 대전, 인천 등 지역별로 구분된 오피 정보를 신속하게 제공하며, 편리하게 업체를 찾을 수 있는 도우미 역할을 합니다. 사용자들은 편리한 검색 기능을 통해 자신에게 맞는 오피를 빠르게 찾을 수 있습니다.</p>
+            <p>오피박사는 항상 최신의 정보를 제공하기 위해, 오피 업체들의 위치, 서비스 종류, 가격, 이용 후기 등 다양한 세부 정보를 실시간으로 업데이트합니다. 이렇게 신뢰할 수 있는 정보로만 제공되기 때문에, 사용자는 언제든지 최신 정보를 통해 자신에게 맞는 최적의 선택을 할 수 있습니다.</p>
+
+            <h3>왜 오피박사를 선택해야 하나요?</h3>
+            <p>1. **최고의 사용자 경험**: 오피박사는 사용자가 원하는 정보에 쉽게 접근할 수 있도록, 효율적인 인터페이스와 기능을 제공합니다.</p>
+            <p>2. **실시간 업데이트**: 오피박사는 실시간으로 오피 업체 정보를 업데이트하여 최신 정보를 제공합니다. 이로 인해 사용자들은 최신 상태의 업체와 서비스를 찾아볼 수 있습니다.</p>
+            <p>3. **카테고리별 맞춤형 검색**: 오피박사는 다양한 카테고리로 오피 업체를 검색할 수 있도록 제공하여, 사용자가 원하는 유형의 업체를 쉽게 찾을 수 있게 돕습니다.</p>
+
+            <h3>오피박사의 강점</h3>
+            <p>오피박사는 단순히 정보 제공에 그치지 않습니다. 오피박사는 사용자들의 만족도를 높이기 위해 계속해서 기능을 업데이트하고, 더 나은 서비스를 제공하고 있습니다. 우리는 언제나 투명하고 공정한 방식으로 오피 업체 정보를 제공하며, 사용자들의 목소리를 듣고 더욱 개선된 서비스를 만들어 나가고 있습니다.</p>
+
+            <a href="https://opbaksa.com" class="cta-button">오피박사 바로가기</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 오피박사. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
