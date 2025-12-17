@@ -16,59 +16,6 @@
 <meta property="og:url" content="https://www.opbss.com">
 <meta property="og:locale" content="ko_KR">
 
-<!-- WebPage Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "오피박사",
-  "url": "https://www.opbss.com",
-  "description": "오피 정보를 중심으로 다양한 유흥 사이트 관련 정보를 안내하는 플랫폼",
-  "publisher": {
-    "@type": "Organization",
-    "name": "오피박사",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://static.wixstatic.com/media/fefa38_50b01e3e0d4a4365b7efee82dbbdb1ed~mv2.png"
-    }
-  }
-}
-</script>
-
-<!-- FAQ Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "오피박사는 어떤 사이트인가요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "오피박사는 오피 정보를 중심으로 지역별 특성과 서비스 유형을 정리해 안내하는 정보 제공 플랫폼입니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "오피 사이트 정보는 어떻게 이해하면 좋을까요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "오피 사이트 관련 정보는 다양한 표현이 혼재되어 있으므로 참고 자료로 비교하며 이해하는 것이 좋습니다."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "대밤, 알밤 같은 표현은 무엇을 의미하나요?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "해당 표현들은 검색 과정에서 파생된 용어로, 정보 탐색의 맥락을 이해하기 위한 참고 요소로 사용됩니다."
-      }
-    }
-  ]
-}
-</script>
-
 <style>
 :root{
  --bg:#0a0a0a;
@@ -89,8 +36,63 @@ body{
  font-family:-apple-system,BlinkMacSystemFont,'Noto Sans KR',sans-serif;
 }
 
-a{color:var(--accent);text-decoration:none}
+a{color:inherit;text-decoration:none}
 
+/* HEADER */
+.header{
+ border-bottom:1px solid var(--border);
+ background:rgba(0,0,0,.6);
+ backdrop-filter:blur(6px);
+}
+.nav{
+ max-width:1100px;
+ margin:0 auto;
+ padding:16px 20px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+}
+.logo{
+ font-size:22px;
+ font-weight:700;
+ color:#ffd54a;
+ letter-spacing:-.02em;
+}
+.menu{
+ display:flex;
+ gap:18px;
+}
+.menu a{
+ color:#ddd;
+ padding:8px 14px;
+ border-radius:10px;
+}
+.menu a:hover{
+ background:#111;
+}
+
+/* CTA BUTTON */
+.cta-wrap{
+ text-align:center;
+ margin:40px 0 60px;
+}
+.cta-btn{
+ display:inline-block;
+ background:linear-gradient(135deg,#ff4d4d,#ff2f6d);
+ color:#fff;
+ padding:16px 36px;
+ font-size:18px;
+ font-weight:600;
+ border-radius:12px;
+ box-shadow:0 12px 30px rgba(255,77,77,.35);
+ transition:transform .2s ease, box-shadow .2s ease;
+}
+.cta-btn:hover{
+ transform:translateY(-2px);
+ box-shadow:0 18px 40px rgba(255,77,77,.45);
+}
+
+/* CONTENT */
 .container{
  max-width:1100px;
  margin:0 auto;
@@ -100,7 +102,7 @@ a{color:var(--accent);text-decoration:none}
 /* HERO */
 .hero{
  text-align:center;
- margin-bottom:60px;
+ margin-bottom:50px;
 }
 .hero h1{
  font-size:clamp(36px,4.5vw,56px);
@@ -127,9 +129,7 @@ a{color:var(--accent);text-decoration:none}
  border-radius:var(--radius);
  padding:34px;
  margin-bottom:34px;
- box-shadow:
-   0 0 0 1px rgba(255,255,255,.02),
-   0 20px 40px rgba(0,0,0,.6);
+ box-shadow:0 20px 40px rgba(0,0,0,.6);
 }
 .section::before{
  content:"";
@@ -140,7 +140,6 @@ a{color:var(--accent);text-decoration:none}
  height:42px;
  border-top:1px solid rgba(255,255,255,.18);
  border-left:1px solid rgba(255,255,255,.18);
- border-radius:16px 0 0 0;
 }
 
 .section-title{
@@ -148,7 +147,6 @@ a{color:var(--accent);text-decoration:none}
  align-items:center;
  gap:10px;
 }
-
 .section-title .icon{
  font-size:12px;
  color:var(--accent);
@@ -192,6 +190,18 @@ footer{
 
 <body>
 
+<!-- HEADER -->
+<header class="header">
+  <nav class="nav">
+    <div class="logo">오피박사</div>
+    <div class="menu">
+      <a href="/">홈</a>
+      <a href="/service.html">서비스소개</a>
+      <a href="/contact.html">제휴문의</a>
+    </div>
+  </nav>
+</header>
+
 <div class="container">
 
   <!-- HERO -->
@@ -201,62 +211,26 @@ footer{
     <div class="brand-line"></div>
   </section>
 
+  <!-- CTA -->
+  <div class="cta-wrap">
+    <a href="https://opbaksa.com" target="_blank" class="cta-btn">
+      오피박사 바로가기
+    </a>
+  </div>
+
   <!-- SECTION 1 -->
   <section class="section">
-    <h2 class="section-title">
-      <span class="icon">◆</span>
-      오피박사는 어떤 사이트인가요?
-    </h2>
-    <p>
-      오피박사는 오피 정보를 기반으로 지역별 특성과 서비스 유형을
-      차분하게 정리해 제공하는 정보 안내 플랫폼입니다.
-    </p>
-    <p>
-      복잡한 검색 환경 속에서 다양한 명칭과 표현을 접하는 이용자들이
-      보다 안정적으로 정보를 이해할 수 있도록 돕는 것을 목표로 합니다.
-    </p>
+    <h2 class="section-title"><span class="icon">◆</span>오피박사는 어떤 사이트인가요?</h2>
+    <p>오피박사는 오피 정보를 기반으로 지역별 특성과 서비스 유형을 차분하게 정리해 제공하는 정보 안내 플랫폼입니다.</p>
+    <p>복잡한 검색 환경 속에서 다양한 명칭과 표현을 접하는 이용자들이 보다 안정적으로 정보를 이해할 수 있도록 돕습니다.</p>
   </section>
 
   <!-- SECTION 2 -->
   <section class="section">
-    <h2 class="section-title">
-      <span class="icon">◆</span>
-      정보 탐색을 돕는 오피 가이드
-    </h2>
-    <p>
-      오피 정보를 검색하다 보면 오피 사이트, 오피스타, 오피시티,
-      오피아트, 오피 나라 등 다양한 표현을 접하게 됩니다.
-    </p>
-    <p>
-      오피박사는 오피 가이드(OP Guide) 역할로서
-      이러한 정보들을 하나의 흐름으로 정리해 안내합니다.
-    </p>
-
-    <h3 class="section-title">
-      <span class="icon">▪</span>
-      순위·커뮤니티 정보 이해
-    </h3>
-    <p>
-      OP 순위나 오피 톡(OPTOK)과 같은 정보는
-      개인 의견이 반영된 참고 자료로 활용되는 경우가 많아
-      객관적인 시각에서 살펴보는 것이 중요합니다.
-    </p>
-  </section>
-
-  <!-- SECTION 3 -->
-  <section class="section">
-    <h2 class="section-title">
-      <span class="icon">◆</span>
-      검색 과정에서 자주 접하는 표현들
-    </h2>
-    <p>
-      대밤, 알밤, 아이러브밤, 밤의 민족, 부경샵과 같은 표현은
-      특정 검색 환경이나 사용자 습관에서 파생된 용어입니다.
-    </p>
-    <p>
-      지역에 따라 부산 비비기, 달림과 같은 표현이 함께 사용되기도 하며,
-      이는 지역 특성이나 검색 방식에서 비롯됩니다.
-    </p>
+    <h2 class="section-title"><span class="icon">◆</span>정보 탐색을 돕는 오피 가이드</h2>
+    <p>오피 정보를 검색하다 보면 오피 사이트, 오피스타, 오피시티, 오피아트, 오피 나라 등 다양한 표현을 접하게 됩니다.</p>
+    <h3 class="section-title"><span class="icon">▪</span>순위·커뮤니티 정보 이해</h3>
+    <p>OP 순위나 오피 톡(OPTOK)과 같은 정보는 참고 자료로 활용하는 것이 바람직합니다.</p>
   </section>
 
   <!-- NOTICE -->
@@ -264,8 +238,8 @@ footer{
     <h2>안내 사항</h2>
     <ul>
       <li>본 사이트는 정보 제공을 목적으로 운영됩니다.</li>
-      <li>각종 명칭과 표현은 일반적인 검색 환경을 설명하기 위한 것입니다.</li>
-      <li>개별 서비스 이용에 대한 판단과 선택은 이용자 본인에게 있습니다.</li>
+      <li>각종 명칭과 표현은 일반적인 검색 환경 설명용입니다.</li>
+      <li>개별 선택에 대한 책임은 이용자 본인에게 있습니다.</li>
     </ul>
   </section>
 
