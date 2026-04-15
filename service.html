@@ -4,28 +4,122 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>서비스 소개 | 오피박사</title>
+<title>서비스 소개 | 오피박사 - 전국 오피 정보 가이드</title>
 
-<meta name="description" content="오피박사는 출장마사지, 스웨디시, 오피, 휴게텔 등 다양한 서비스 유형을 분석하고 이해하기 쉽게 안내합니다.">
+<meta name="description" content="오피박사가 제공하는 체계적인 서비스 가이드를 확인하세요. 출장마사지, 스웨디시, 오피, 휴게텔 등 다양한 서비스 유형의 특징과 이용 환경을 알기 쉽게 정리해 드립니다.">
+<meta name="keywords" content="오피박사 서비스, 오피사이트 가이드, 출장마사지 정보, 스웨디시 안내, 휴게텔 정보, 오피박사">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.opbss.com/service.html">
+
+<link rel="canonical" href="https://opbss.com/service">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="오피박사 - 서비스 유형별 상세 안내 가이드">
+<meta property="og:description" content="복잡한 오피 정보를 한눈에! 오피박사만의 구조적인 서비스 정리 노하우를 확인해보세요.">
+<meta property="og:url" content="https://opbss.com/service.html">
+<meta property="og:image" content="https://opbss.com/og.png">
 
 <style>
-body{margin:0;background:#000;color:#eaeaea;font-family:-apple-system,BlinkMacSystemFont,'Noto Sans KR',sans-serif}
-a{text-decoration:none;color:inherit}
-.header{border-bottom:1px solid rgba(255,255,255,.08);background:rgba(0,0,0,.6)}
-.nav{max-width:1100px;margin:0 auto;padding:16px 20px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-size:22px;font-weight:700;color:#ffd54a}
+:root{
+ --bg:#0a0a0a;
+ --panel:#121212;
+ --border:rgba(255,255,255,.08);
+ --text:#eaeaea;
+ --muted:#a0a0a0;
+ --accent:#ff4d4d;
+ --radius:16px;
+}
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:radial-gradient(ellipse at top,#111 0%,#000 70%);
+ color:var(--text);
+ font-family:-apple-system,BlinkMacSystemFont,'Noto Sans KR',sans-serif;
+ line-height: 1.75;
+}
+a{text-decoration:none;color:inherit;transition: 0.3s;}
+
+/* HEADER */
+.header{
+ border-bottom:1px solid var(--border);
+ background:rgba(0,0,0,.8);
+ backdrop-filter:blur(10px);
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+}
+.nav{
+ max-width:1100px;
+ margin:0 auto;
+ padding:16px 20px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+}
+.logo{
+ font-size:24px;
+ font-weight:800;
+ color:#ffd54a;
+}
 .menu{display:flex;gap:18px}
-.menu a{color:#ddd;padding:8px 14px;border-radius:10px}
-.menu a:hover{background:#111}
-.container{max-width:1100px;margin:0 auto;padding:50px 20px}
-.section{background:linear-gradient(180deg,#141414,#0d0d0d);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:34px;margin-bottom:34px}
-.section h1{font-size:40px;margin-bottom:14px}
-.section h2{font-size:26px;margin-top:0}
-.section h3{font-size:20px;margin-top:24px}
-.section p{line-height:1.75;color:#ddd}
-footer{text-align:center;padding:30px 20px;background:#080808;color:#777;font-size:14px}
+.menu a{color:#ddd;padding:8px 14px;border-radius:10px;font-weight:500}
+.menu a:hover{background:rgba(255,255,255,0.1);color:#fff}
+
+/* CONTAINER */
+.container{
+ max-width:1000px;
+ margin:0 auto;
+ padding:60px 20px;
+}
+
+/* SECTION STYLE */
+.section{
+ position:relative;
+ background:#141414;
+ border:1px solid var(--border);
+ border-radius:var(--radius);
+ padding:40px;
+ margin-bottom:34px;
+ box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+.section h1{
+ font-size:clamp(32px, 5vw, 48px);
+ margin-top:0;
+ margin-bottom:20px;
+ background: linear-gradient(to right, #fff, #aaa);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+.section h2{
+ font-size:28px;
+ margin-top:0;
+ margin-bottom:18px;
+ color: #ffd54a;
+}
+.section h3{
+ font-size:22px;
+ margin-top:30px;
+ margin-bottom:12px;
+ color: var(--accent);
+ border-left: 4px solid var(--accent);
+ padding-left: 12px;
+}
+.section p{
+ color:#bbb;
+ word-break: keep-all;
+}
+.highlight{
+ color: #fff;
+ font-weight: 600;
+}
+
+footer{
+ text-align:center;
+ padding:40px 20px;
+ background:#080808;
+ color:#666;
+ font-size:14px;
+ border-top: 1px solid var(--border);
+}
 </style>
 </head>
 
@@ -36,82 +130,67 @@ footer{text-align:center;padding:30px 20px;background:#080808;color:#777;font-si
     <div class="logo">오피박사</div>
     <div class="menu">
       <a href="/">홈</a>
-      <a href="/service.html">서비스소개</a>
+      <a href="/service.html">정보가이드</a>
       <a href="/contact.html">제휴문의</a>
     </div>
   </nav>
 </header>
 
-<div class="container">
+<main class="container">
 
-<section class="section">
-<h1>서비스 소개</h1>
-<p>
-오피박사는 단순히 명칭을 나열하지 않습니다.  
-출장마사지, 스웨디시, 오피, 휴게텔 등  
-다양하게 불리는 서비스 유형을 **구조적으로 정리하고 이해하기 쉽게 안내**합니다.
-</p>
-</section>
+  <section class="section">
+    <h1>서비스 소개</h1>
+    <p>
+      <span class="highlight">오피박사</span>는 단순히 사이트 명칭을 나열하는 플랫폼이 아닙니다.<br>
+      출장마사지, 스웨디시, 오피, 휴게텔 등 시중에 혼재된 다양한 서비스 유형을 <span class="highlight">구조적으로 정리하고 이용자가 올바르게 이해할 수 있도록 핵심 정보를 안내</span>합니다.
+    </p>
+  </section>
 
-<section class="section">
-<h2>왜 서비스 정리가 필요한가</h2>
-<p>
-관련 정보는 인터넷에 넘쳐나지만,  
-정작 어떤 서비스가 어떤 성격을 가지고 있는지  
-명확하게 설명해주는 곳은 많지 않습니다.
-</p>
-<p>
-오피박사는 표현의 차이, 운영 방식, 이용 환경을 기준으로  
-서비스 유형을 차분하게 구분하고 설명합니다.
-</p>
-</section>
+  <section class="section">
+    <h2>정보 체계화의 필요성</h2>
+    <p>
+      온라인상에는 수많은 정보가 넘쳐나지만, 정작 이용자가 궁금해하는 각 서비스의 성격과 차이점을 명확히 설명해주는 곳은 드뭅니다.
+    </p>
+    <p>
+      오피박사는 표현의 미세한 차이, 운영 방식의 특징, 이용 환경에 따른 장단점을 객관적인 기준으로 구분하여 차분하게 설명해 드립니다.
+    </p>
+  </section>
 
-<section class="section">
-<h2>주요 서비스 유형 안내</h2>
+  <section class="section">
+    <h2>핵심 서비스 유형 안내</h2>
 
-<h3>출장마사지</h3>
-<p>
-출장마사지라는 표현은 비교적 넓은 의미로 사용됩니다.  
-지역, 운영 방식, 서비스 구성에 따라 차이가 크기 때문에  
-표면적인 명칭보다는 실제 구조를 이해하는 것이 중요합니다.
-</p>
+    <h3>출장마사지 가이드</h3>
+    <p>
+      출장마사지는 매우 폭넓은 의미를 내포하고 있습니다. 운영 방식과 서비스 구성에 따라 사용자 체감도가 크게 달라지므로, 명칭 뒤에 숨은 실제 서비스 구조를 파악하는 것이 중요합니다.
+    </p>
 
-<h3>스웨디시</h3>
-<p>
-스웨디시는 특정 관리 방식에서 비롯된 표현으로,  
-최근 다양한 형태로 확장되어 사용되고 있습니다.  
-오피박사는 이 용어가 어떻게 사용되고 있는지 흐름을 정리합니다.
-</p>
+    <h3>스웨디시 마사지 정보</h3>
+    <p>
+      유러피안 스타일의 관리 방식에서 유래된 스웨디시는 최근 국내에서 다양한 형태로 변모하고 있습니다. 오피박사는 이러한 트렌드의 흐름과 정확한 이용 정보를 정리하여 제공합니다.
+    </p>
 
-<h3>오피 · 휴게텔</h3>
-<p>
-오피와 휴게텔은 오래전부터 사용되어 온 표현이지만,  
-지역과 플랫폼에 따라 의미가 조금씩 달라질 수 있습니다.
-</p>
-<p>
-오피박사는 이러한 차이를 한쪽으로 치우치지 않고  
-정보 관점에서 설명합니다.
-</p>
-</section>
+    <h3>오피 및 휴게텔 분석</h3>
+    <p>
+      전통적인 서비스 형태인 오피와 휴게텔은 지역과 플랫폼의 성격에 따라 서비스 품질의 차이가 존재합니다. 오피박사는 이러한 정보 불균형을 해소하기 위해 데이터 중심의 분석을 지향합니다.
+    </p>
+  </section>
 
-<section class="section">
-<h2>오피박사가 정보를 다루는 방식</h2>
-<p>
-우리는 특정 업체나 요청에 따라 정보를 구성하지 않습니다.  
-실제 검색 환경과 이용자 관점에서  
-어떤 표현이 사용되고 있는지를 중심으로 정리합니다.
-</p>
-<p>
-화려한 문구보다 중요한 것은 **이해하기 쉬운 구조와 흐름**라고 생각합니다.
-</p>
-</section>
+  <section class="section">
+    <h2>오피박사의 정보 철학</h2>
+    <p>
+      우리는 광고주의 요청에 따라 정보를 왜곡하지 않습니다. 실제 검색 환경에서 이용자들이 가장 많이 접하는 표현과 궁금증을 중심으로 <span class="highlight">사용자 중심의 콘텐츠</span>를 구성합니다.
+    </p>
+    <p>
+      화려한 수식어보다는 <span class="highlight">논리적인 흐름과 이해하기 쉬운 가이드</span>가 진정한 정보라고 믿습니다.
+    </p>
+  </section>
 
-</div>
+</main>
 
 <footer>
-© 2025 오피박사. All Rights Reserved.
+  <p>© 2025 오피박사. All Rights Reserved.</p>
+  <p>전국 오피사이트 정보 제공 플랫폼 오피박사(OPBSS)</p>
 </footer>
 
 </body>
 </html>
-
